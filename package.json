@@ -1,0 +1,20 @@
+{
+  "name": "mbs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "graphql": "^14.0.2",
+    "graphql-yoga": "^1.16.7",
+    "prisma-client-lib": "^1.20.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

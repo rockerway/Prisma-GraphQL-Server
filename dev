@@ -1,0 +1,10 @@
+#!/bin/sh
+
+docker run --rm -it \
+  -v /app/node_modules \
+  -v ${PWD}:/app \
+  -p 4000:4000 \
+  --link prisma_nodejs:prisma \
+  --network prisma-test_default \
+  node:alpine \
+  sh

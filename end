@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker stop prisma_service
+docker-compose down -v

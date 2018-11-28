@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ip=http:\\/\\/$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' prisma_nodejs)
+
+docker run --rm -it --name prisma_service \
+  -e PRISMA_ENDPOINT=${ip}:4466 \
+  -p 4000:4000 \
+  --link prisma_nodejs:prisma \
+  --network prisma-test_default \
+  mbs
