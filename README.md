@@ -12,12 +12,12 @@ prisma-client-lib: ^1.20.7
 
 ## Start Server
 
-start 可能會失敗 (prisma server 的 container 網路尚未設定完成)
+- build image
+`docker build -t mbs .`
+- start Prisma server
+`docker-compose up -d`
+- start GraphQL server
+`sh start`
+
+> start 可能會失敗 (prisma server 的 container 網路尚未設定完成)
 > 如果 "sh start" 失敗，請過 5 秒後再進行嘗試
-
-```
-docker-compose up -d
-sh start
-```
-
-##
