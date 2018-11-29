@@ -1,4 +1,4 @@
-# Mock Business Service
+# Prisma GraphQL Server
 
 GraphQL Server by Apollo with Prisma
 
@@ -10,12 +10,9 @@ graphql-yoga: ^1.16.7
 prisma-client-lib: ^1.20.7
 ```
 
-Server port:
+End Point:
 
-```
-GraphQL server: 4000
-Prisma server: 4466
-```
+`127.0.0.1:4000`
 
 ## Start Server
 
@@ -31,5 +28,5 @@ Prisma server: 4466
 
 `sh start`
 
-> start GraphQL server (`sh start`) 可能會失敗 (prisma server 的 container 網路尚未設定完成)
-> 如果 start GraphQL server 失敗，請過 5 秒後再進行嘗試
+**start GraphQL server (`sh start`) 可能會失敗 (prisma server 的 container 網路尚未設定完成)
+如果 start GraphQL server 失敗，請過 5 秒後再進行嘗試**

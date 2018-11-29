@@ -2,7 +2,8 @@
 
 docker run --rm -it \
   -v /app/node_modules \
-  -v ${PWD}:/app \
+  -v /app/generated \
+  -v ${PWD}/src:/app \
   -p 4000:4000 \
   --link prisma_nodejs:prisma \
   --network prisma-test_default \

@@ -1,5 +1,9 @@
 {
-  "name": "mbs",
+  "name": "graphql_server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rockerway/Prisma-GraphQL-Server.git"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -14,7 +18,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kind of Sky Light",
   "license": "ISC",
-  "description": ""
+  "description": "GraphQL server with Prisma."
 }
