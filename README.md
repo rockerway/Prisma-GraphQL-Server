@@ -10,6 +10,13 @@ graphql-yoga: ^1.16.7
 prisma-client-lib: ^1.20.7
 ```
 
+Server port:
+
+```
+GraphQL server: 4000
+Prisma server: 4466
+```
+
 ## Start Server
 
 - build image
