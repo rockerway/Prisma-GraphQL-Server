@@ -28,5 +28,6 @@ End Point:
 
 `sh start`
 
-**start GraphQL server (`sh start`) 可能會失敗 (prisma server 的 container 網路尚未設定完成)
-如果 start GraphQL server 失敗，請過 5 秒後再進行嘗試**
+**start GraphQL server (`sh start`) 可能會失敗 (prisma server 的 container 網路尚未設定完成)**
+
+**如果 start GraphQL server 失敗，請過 5 秒後再進行嘗試**
