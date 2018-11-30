@@ -3,9 +3,3 @@ type User {
   name: String!
   companies: [Company!]!
 }
-
-type Company {
-  id: ID! @unique
-  name: String!
-  users: [User!]!
-}

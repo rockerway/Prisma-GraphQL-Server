@@ -1,0 +1,15 @@
+type Query {
+  user(userId: ID!): User
+  users: [User!]!
+}
+
+type Mutation {
+  createUser(name: String!): User
+  joinCompany(userId: ID!, companyId: ID!): User
+}
+
+type User {
+  id: ID!
+  name: String!
+  companies: [Company!]!
+}

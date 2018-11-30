@@ -1,11 +1,13 @@
 #!/bin/sh
 
+folder=`printf '%s\n' "${PWD##*/}" | tr '[:upper:]' '[:lower:]'`
+
 docker run --rm -it \
   -v /app/node_modules \
-  -v /app/generated \
+  -v /app/prisma-client \
   -v ${PWD}/src:/app \
   -p 4000:4000 \
   --link prisma_nodejs:prisma \
-  --network prisma-test_default \
+  --network ${folder}_default \
   node:alpine \
   sh

@@ -6,10 +6,6 @@ prisma
 
 `npm install -g prisma`
 
-## Start Prisma and database
-
-`docker-compose up -d`
-
 ## Configure your Prisma API
 
 `prisma init --endpoint http://localhost:4466`
